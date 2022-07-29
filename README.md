@@ -42,12 +42,14 @@ Then, a executable file jikken_E is created.
 
 Execution: 
 Run the following command in the directory including the data file of a goal figure. 
-
-  ./jikken_E \<string1\> <string2> <integer1> <integer2>
-
-  Example: ./jikken_E pegasus_60.dat ABC 1 20
-
-  Meaning of the arguments:
+```
+$ ./jikken_E \<string1\> \<string2\> \<integer1\> \<integer2\>
+'''
+Example
+```
+./jikken_E pegasus_60.dat ABC 1 20
+```
+Meaning of the arguments:
    - <string1> : file name of a goal figure (polygonal type)
    - <string2> : file name to which results are written
    - <integer1> : results are displayed?  0:no, 1:yes
