@@ -18,7 +18,14 @@ The following algorithms are implemented.
 
 # Environment
 The author ran the programs on Ubuntu 16.04 (or 20.04), and the following preparations may be required to compile the source code. 
-
 - Make the Eigen library (https://eigen.tuxfamily.org) available on your PC. 
 - Install the X11 library on your PC. 
   sudo apt install libx11-dev 
+
+# Goal figures
+Directory Data contains some goal figure files, which are divided into two types. 
+- Polygonal type: e.g. pegasus_60.dat 
+- Mesh type: e.g. pegasus_60_27.dat 
+See document.txt in directory Data for the data format.  
+
+## ABC
