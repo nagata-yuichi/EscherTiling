@@ -1,4 +1,4 @@
-# Algorithms for the Escherization problem
+# Escherization with Large Deformations Based on As-Rigid-As-Possible Shape Modeling
 This code is a C++ implementation of the algorithms developed in the following papers. 
 
 [1] Yuichi Nagata and Shinji Imahori, An Efficient Exhaustive Search Algorithm for the Escherization Problem, Algorithmica, Vol.82, No.9, 2502-2534, 2020. [[link]](https://link.springer.com/article/10.1007/s00453-020-00695-6)
@@ -6,9 +6,9 @@ This code is a C++ implementation of the algorithms developed in the following p
 [2] Yuichi Nagata and Shinji Imahori, Escherization with Large Deformations Based on As-Rigid-As-Possible Shape Modeling, ACM Transactions on Graphics, Vol.41, No.2:11, 1-16, 2022. [[link]](https://dl.acm.org/doi/full/10.1145/3487017)
 
 The following algorithms are implemented.
-- EST with the Euclidean (or AD) distance 
-- EST with the E_I (or E_IR) distance 
-- Heuristic search with the E_I (or E_IR) distance 
+- EST with the Euclidean or AD distance 
+- EST with the E_I or E_IR distance 
+- Heuristic search with the E_I or E_IR distance 
 
 # Environment
 The author ran the programs on Ubuntu 16.04 (or 20.04), and the following preparations may be required to compile the source code. 
@@ -69,3 +69,17 @@ If <integer1> = 1, the top solutions (tile figures) are displayed. Press the ret
 
 The top solutions stored in a file can also be displayed (see "Display Result"). 
 
+<p align="center"><img src="images/params.png" height=150/></p>
+
+## Constructing a tiling
+
+The class `csk::IsohedralTiling` can be used to describe a specific tiling and its prototile.  It has a single constructor that takes the desired tiling type as an argument.  The tiling type is expressed as an integer representing a legal isohedral type.  These are all numbers between 1 and 93 (inclusive), but there are some holes—for example, there is no Type 19.  The array `csk::tiling_types`, with length `csk::num_types` (fixed at 81) contains the legal types:
+
+```C++
+// Suppose you wanted to loop over all the tiling types...
+for( size_t idx = 0; idx < csk::num_types; ++idx ) {
+    // Create a new tiling of the given type, with default shape.
+    csk::IsohedralTiling a_tiling( csk::tiling_types[ idx ] );
+    // Do something with this tiling type
+}
+```
