@@ -10,12 +10,6 @@ The following algorithms are implemented.
 - EST with the E_I (or E_IR) distance 
 - Heuristic search with the E_I (or E_IR) distance 
 
-# Directory structure
-.
-|-- README.md
-|-- Program (source codes of the algorithms)
-|-- Data (example date of goal figures)
-
 # Environment
 The author ran the programs on Ubuntu 16.04 (or 20.04), and the following preparations may be required to compile the source code. 
 - Make the Eigen library (https://eigen.tuxfamily.org) available on your PC. 
@@ -29,4 +23,5 @@ Directory Data contains some goal figure files, which are divided into two types
 
 See document.txt in directory Data for the data format.  
 
-## ABC
+# EST with the Euclidean (or AD) distance 
+
