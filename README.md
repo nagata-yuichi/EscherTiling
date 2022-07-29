@@ -26,6 +26,7 @@ The author ran the programs on Ubuntu 16.04 (or 20.04), and the following prepar
 Directory Data contains some goal figure files, which are divided into two types. 
 - Polygonal type: e.g. pegasus_60.dat 
 - Mesh type: e.g. pegasus_60_27.dat 
+
 See document.txt in directory Data for the data format.  
 
 ## ABC
