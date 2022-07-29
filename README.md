@@ -32,12 +32,10 @@ Before compiling the program, rewrite parts of the program directly.
 - Set E or AD in line 4 of search_E_EST.h, depending on whether the Euclidean or AD distance is used.  
 
 Compile: 
-`./build_E.exe
-mv jikken jikken_E`
-
-./build_E.exe
-mv jikken jikken_E
-
+```
+$ ./build_E.exe
+$ mv jikken jikken_E
+```
 Then, the executable file "jikken_E" is created.
 
 Execution: 
