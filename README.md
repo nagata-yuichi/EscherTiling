@@ -40,7 +40,7 @@ $ mv jikken jikken_E
 ```
 Then, a executable file jikken_E is created.
 
-Execution: \\
+Execution: <\br>
 Run the following command in the directory including the data file of a goal figure. 
 ```
 $ ./jikken_E \<string1\> \<string2\> \<integer1\> \<integer2\>
