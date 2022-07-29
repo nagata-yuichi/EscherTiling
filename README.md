@@ -38,12 +38,12 @@ Compile:
 $ ./build_E.exe
 $ mv jikken jikken_E
 ```
-Then, the executable file "jikken_E" is created.
+Then, a executable file jikken_E is created.
 
 Execution: 
 Run the following command in the directory including the data file of a goal figure. 
 
-  ./jikken_E <string1> <string2> <integer1> <integer2>
+  ./jikken_E \<string1\> <string2> <integer1> <integer2>
 
   Example: ./jikken_E pegasus_60.dat ABC 1 20
 
