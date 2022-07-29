@@ -43,12 +43,12 @@ Then, a executable file jikken_E is created.
 Execution:  
 Run the following command in the directory including the data file of a goal figure. 
 ```
-$ ./jikken_E \<string1\> \<string2\> \<integer1\> \<integer2\>
+$ ./jikken_E <string1> <string2> <integer1> <integer2>
 ```
-   - <string1> : file name of a goal figure (polygonal type)
-   - <string2> : file name to which results are written
-   - <integer1> : results are displayed?  0:no, 1:yes
-   - <integer2> : the number of top solutions stored
+    \<string1\> : file name of a goal figure (polygonal type)  
+    \<string2\> : file name to which results are written  
+    \<integer1\> : results are displayed?  0:no, 1:yes  
+    \<integer2\> : the number of top solutions stored  
 
 Example
 ```
