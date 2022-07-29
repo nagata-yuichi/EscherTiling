@@ -23,10 +23,10 @@ Directory Data contains some goal figure files, which are divided into two types
 
 See document.txt in directory Data for the data format.  
 
-## How to use 
+# How to use 
 It is recommended to run EST with the Euclidean distance first because this is the most basic one. 
 
-# EST with the Euclidean or AD distance 
+## EST with the Euclidean or AD distance 
 Before compiling the program, rewrite parts of the program directly. 
 - Set EST in line 4 of env_E.h.
 - Set E or AD in line 4 of search_E_EST.h, depending on whether the Euclidean or AD distance is used.  
