@@ -23,5 +23,49 @@ Directory Data contains some goal figure files, which are divided into two types
 
 See document.txt in directory Data for the data format.  
 
+## How to use 
+It is recommended to run EST with Euclidean distance first because this is the most basic one. 
+
 # EST with the Euclidean (or AD) distance 
+Before compiling the program, rewrite parts of the program directly. 
+- Set EST in line 4 of env_E.h.
+- Set E or AD in line 4 of search_E_EST.h, depending on whether the Euclidean or AD distance is used.  
+
+Compile: 
+./build_E.exe
+mv jikken jikken_E
+
+Then, the executable file "jikken_E" is created.
+
+Execution: 
+Run the following command in the directory including the data file of a goal figure. 
+
+  ./jikken_E <string1> <string2> <integer1> <integer2>
+
+  Example: ./jikken_E pegasus_60.dat ABC 1 20
+
+  Meaning of the arguments:
+   - <string1> : file name of a goal figure (polygonal type)
+   - <string2> : file name to which results are written
+   - <integer1> : results are displayed?  0:no, 1:yes
+   - <integer2> : the number of top solutions stored
+
+Result: 
+The specified number of top solutions are saved in a file (ABC_pegasus_60.dat.tile in this example) and are displayed in the terminal, as shown in the example below 
+
+order =  0 eval=18994.244366: IH= 6 (18 4 18 7 4 3 ) 22
+order =  1 eval=21028.815657: IH= 6 (5 14 5 12 14 4 ) 48
+order =  2 eval=21868.573515: IH= 4 (13 4 7 13 14 3 ) 20
+....
+
+Each line represent the following values:
+- order: ranking of the solution
+- eval : the distance value
+- IH   : Isohedral type
+- ( , , ...) : the numbers of points assigned to the tiling edges of the template
+- right-most number : the value of j (see [1] or [2])
+
+If <integer1> = 1, the top solutions (tile figures) are displayed. Press the return key to display the next solution. 
+
+The top solutions stored in a file can also be displayed (see "Display Result"). 
 
