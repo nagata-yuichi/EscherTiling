@@ -40,14 +40,14 @@ $ mv jikken jikken_E
 ```
 Then, a executable file jikken_E is created.
 
-Execution: 
+Execution: \\
 Run the following command in the directory including the data file of a goal figure. 
 ```
 $ ./jikken_E \<string1\> \<string2\> \<integer1\> \<integer2\>
-'''
+```
 Example
 ```
-./jikken_E pegasus_60.dat ABC 1 20
+$ ./jikken_E pegasus_60.dat ABC 1 20
 ```
 Meaning of the arguments:
    - <string1> : file name of a goal figure (polygonal type)
