@@ -11,7 +11,7 @@ The following algorithms are implemented.
 - Heuristic search with the E_I or E_IR distance 
 
 # Environment
-The author ran the programs on Ubuntu 16.04 (or 20.04), and the following preparations may be required to compile the source code. 
+The author ran the programs on Ubuntu 16.04 and 20.04, where the following preparations may be required to compile the source code. 
 - Make the Eigen library (https://eigen.tuxfamily.org) available on your PC. 
 - Install the X11 library on your PC. `$ sudo apt install libx11-dev`
 
