@@ -38,7 +38,7 @@ $ mv jikken jikken_E
 Then, a executable file jikken_E is created.
 
 Execution:  
-Run the following command in the directory including the data file of a goal figure. 
+Run the following command in a directory including the necessary input files. 
 ```
 $ ./jikken_E <string1> <string2> <integer1> <integer2>
 ```
@@ -87,7 +87,7 @@ Compile:
 Then, the executable file "display.exe" is created.
 
 Execution:  
-Run the following command in the directory including a result file. 
+Run the following command in a directory including the necessary input files. 
 ```
 $ ./display.exe <string1> 
 ```
@@ -109,7 +109,7 @@ $ mv jikken jikken_I
 Then, a executable file jikken_I is created.
 
 Execution:  
-Run the following command in the directory including the data file of a goal figure. 
+Run the following command in a directory including the necessary input files. 
 ```
 $ ./jikken_I <string1> <string2> <integer1> <integer2> <double1>
 ```
@@ -143,7 +143,7 @@ $ mv jikken jikken_get_conf
 Then, a executable file jikken_get_conf is created.
 
 Execution:  
-Run the following command in the directory including the data file of a goal figure. 
+Run the following command in a directory including the necessary input files. 
 ```
 $ ./jikken_get_conf <string1> <string2> <integer1> <integer2>
 ```
@@ -173,7 +173,7 @@ $ mv jikken jikken_I_conf
 Then, a executable file jikken_I_conf is created.
 
 Execution:  
-Run the following command in the directory including the necessary data files. 
+Run the following command in a directory including the necessary input files. 
 ```
 $ ./jikken_I_conf <string1> <string2> <integer1> <integer2> <double1> <string3>
 ```
