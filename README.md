@@ -130,7 +130,8 @@ Same as EST with the Euclidean distance.
 
 ## Heuristic search with the E_I or E_IR distance 
 
-**Step 1: Obtaining promising configurations**  
+**Step 1: Obtaining promising configurations**
+
 Before compiling the program, rewrite a part of the program directly. 
 - Set CONF in line 4 of env_E.h.
 
@@ -158,7 +159,8 @@ $ ./jikken_get_conf pegasus_60.dat ABC 0 50000
 ```
 Then, the specified number of promising configurations are saved in a file (ABC_pegasus_60.dat.conf in this example).
 
-**Step 2: Perform optimization for the specified configurations**  
+**Step 2: Perform optimization for the specified configurations**
+
 Before compiling the program, rewrite parts of the program directly. 
 - Set CONF in line 4 of env_I.h.
 - Set I or IR in line 4 of search_I_EST.h, depending on whether the E_I or E_IR distance is used.  
