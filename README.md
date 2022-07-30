@@ -78,7 +78,7 @@ The top solutions stored in a file can also be displayed (see "Display Result").
 
 ## Display Results
 
-The solutions (tile figures) saved in a file can be displayed using the program for displaying results. 
+The solutions saved in a file (e.g. ABC_pegasus_60.dat.tile) can be displayed using the program for displaying results. 
 
 
 
@@ -93,7 +93,7 @@ Run the following command in the directory including a result file.
 ```
 $ ./display.exe <string1> 
 ```
-&nbsp; \<string1\> : file name of a result file (e.g. ABC_pegasus_60.dat.tile)
+&nbsp; \<string1\> : file name of a result file 
 
 Press the return key to display the next solution. 
 
