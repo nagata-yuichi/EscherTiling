@@ -145,7 +145,7 @@ $ ./jikken_get_conf <string1> <string2> <integer1> <integer2>
 &nbsp;　\<string1\> : file name of a goal figure (polygonal type)  
 &nbsp;　\<string2\> : file name to which results are written  
 &nbsp;　\<integer1\> : set 0 or 1 (a parameter not used)  
-&nbsp;　\<integer2\> : the number of top configurations stored (<= 100000)  
+&nbsp;　\<integer2\> : the number of top configurations stored ($\leq 100000$)  
 
 (Example)
 ```
