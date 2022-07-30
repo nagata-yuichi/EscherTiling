@@ -66,11 +66,11 @@ order =  2 eval=21868.573515: IH= 4 (13 4 7 13 14 3 ) 20
 ```
 
 Each line represent the following values:  
-     \- order: ranking of the solution  
-     \- eval : the distance value  
-      IH   : Isohedral type  
-      ( , , ...) : the numbers of points assigned to the tiling edges of the template  
-      bright-most number : the value of j (see [1] or [2])  
+&nbsp; \- order: ranking of the solution  
+&nbsp; \- eval : the distance value  
+&nbsp; \- IH   : Isohedral type  
+&nbsp; \- ( , , ...) : the numbers of points assigned to the tiling edges of the template  
+&nbsp; \- bright-most number : the value of j (see [1] or [2])  
 
 If \<integer1\> = 1, the top solutions (tile figures) are displayed. Press the return key to display the next solution. 
 
