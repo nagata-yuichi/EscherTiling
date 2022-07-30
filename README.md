@@ -66,8 +66,8 @@ order =  2 eval=21868.573515: IH= 4 (13 4 7 13 14 3 ) 20
 ```
 
 Each line represent the following values:  
-      order: ranking of the solution  
-      eval : the distance value  
+     \- order: ranking of the solution  
+     \- eval : the distance value  
       IH   : Isohedral type  
       ( , , ...) : the numbers of points assigned to the tiling edges of the template  
       bright-most number : the value of j (see [1] or [2])  
