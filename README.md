@@ -69,24 +69,36 @@ Each line represent the following values:
 &nbsp; \- order: ranking of the solution  
 &nbsp; \- eval : the distance value  
 &nbsp; \- IH   : Isohedral type  
-&nbsp; \- ( , , ...) : the numbers of points assigned to the tiling edges of the template  
+&nbsp; \- (...) : the numbers of points assigned to the tiling edges of the template  
 &nbsp; \- bright-most number : the value of j (see [1] or [2])  
 
 If \<integer1\> = 1, the top solutions (tile figures) are displayed. Press the return key to display the next solution. 
 
 The top solutions stored in a file can also be displayed (see "Display Result"). 
 
-<p align="center"><img src="images/params.png" height=150/></p>
 
-## Constructing a tiling
 
-The class `csk::IsohedralTiling` can be used to describe a specific tiling and its prototile.  It has a single constructor that takes the desired tiling type as an argument.  The tiling type is expressed as an integer representing a legal isohedral type.  These are all numbers between 1 and 93 (inclusive), but there are some holes—for example, there is no Type 19.  The array `csk::tiling_types`, with length `csk::num_types` (fixed at 81) contains the legal types:
 
-```C++
-// Suppose you wanted to loop over all the tiling types...
-for( size_t idx = 0; idx < csk::num_types; ++idx ) {
-    // Create a new tiling of the given type, with default shape.
-    csk::IsohedralTiling a_tiling( csk::tiling_types[ idx ] );
-    // Do something with this tiling type
-}
+##Display Results
+
+The solutions (tile figures) saved in a file can be displayed using the program for displaying results. 
+
+
+
+Compile:  
 ```
+./build_display.exe
+```
+Then, the executable file "display.exe" is created.
+
+Execution:  
+Run the following command in the directory including a result file. 
+```
+$ ./display.exe <string1> 
+```
+&nbsp; \<string1\> : file name of a result file
+
+Press the return key to display the next solution. 
+
+
+
