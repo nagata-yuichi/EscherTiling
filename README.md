@@ -75,9 +75,7 @@ The top solutions stored in a file can also be displayed (see "Display Result").
 
 ## Display Results
 
-The solutions saved in a file (e.g. ABC_pegasus_60.dat.tile) can be displayed using the program for displaying results. 
-
-
+The solutions saved in a file (e.g. ABC_pegasus_60.dat.tile) can be displayed using this program. 
 
 Compile:  
 ```
