@@ -58,18 +58,19 @@ $ ./jikken_E pegasus_60.dat ABC 1 20
    
 Result:  
 The specified number of top solutions are saved in a file (ABC_pegasus_60.dat.tile in this example) and are displayed in the terminal, as shown in the example below 
-
+```
 order =  0 eval=18994.244366: IH= 6 (18 4 18 7 4 3 ) 22  
 order =  1 eval=21028.815657: IH= 6 (5 14 5 12 14 4 ) 48  
 order =  2 eval=21868.573515: IH= 4 (13 4 7 13 14 3 ) 20  
 ....  
+```
 
 Each line represent the following values:  
   order: ranking of the solution  
   eval : the distance value  
   IH   : Isohedral type  
   ( , , ...) : the numbers of points assigned to the tiling edges of the template  
-  right-most number : the value of j (see [1] or [2])  
+  bright-most number : the value of j (see [1] or [2])  
 
 If \<integer1\> = 1, the top solutions (tile figures) are displayed. Press the return key to display the next solution. 
 
