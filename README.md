@@ -176,7 +176,7 @@ $ ./jikken_I_conf <string1> <string2> <integer1> <integer2> <double1> <string3>
 &nbsp;　\<integer1\> : results are displayed?  0:no, 1:yes  
 &nbsp;　\<integer2\> : the number of top solutions stored  
 &nbsp;　\<double1\> : the value of alpha (see [2])  
-&nbsp;　\<string3\> : file name of a promising configuration data
+&nbsp;　\<string3\> : file name of a promising configuration data (<= 100000)
 
 (Example)
 ```
