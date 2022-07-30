@@ -145,7 +145,7 @@ $ ./jikken_get_conf <string1> <string2> <integer1> <integer2>
 &nbsp;　\<string1\> : file name of a goal figure (polygonal type)  
 &nbsp;　\<string2\> : file name to which results are written  
 &nbsp;　\<integer1\> : set 0 or 1 (a parameter not used)  
-&nbsp;　\<integer2\> : the number of top configurations stored ($\leq 100000$)  (50000 is recommended)
+&nbsp;　\<integer2\> : the number of top configurations stored (50000 is recommended)
 
 (Example)
 ```
@@ -175,7 +175,7 @@ $ ./jikken_I_conf <string1> <string2> <integer1> <integer2> <double1> <string3>
 &nbsp;　\<string2\> : file name to which results are written  
 &nbsp;　\<integer1\> : results are displayed?  0:no, 1:yes  
 &nbsp;　\<integer2\> : the number of top solutions stored  
-&nbsp;　\<double1\> : the value of $\alpha$ (see [2]) (0.5 is recommended)
+&nbsp;　\<double1\> : the value of $\alpha$ (see [2]) (0.5 is recommended)  
 &nbsp;　\<string3\> : file name of a promising configuration data  
 
 (Example)
