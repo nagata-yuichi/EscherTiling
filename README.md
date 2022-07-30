@@ -97,8 +97,6 @@ Press the return key to display the next solution.
 
 
 ## EST with the E_I or E_IR distance 
-Running this program takes a lot of computation time.
-
 Before compiling the program, rewrite parts of the program directly. 
 - Set EST in line 4 of env_I.h.
 - Set I or IR in line 4 of search_I_EST.h, depending on whether the E_I or E_IR distance is used.
@@ -129,4 +127,69 @@ $ ./jikken_I pegasus_60_27.dat ABC 1 20 0.5
    
 Result:  
 Same as EST with the Euclidean distance.
+
+## Heuristic search with the E_I or E_IR distance 
+
+Step 1: Obtaining promising configurations 
+Before compiling the program, rewrite a part of the program directly. 
+- Set CONF in line 4 of env_E.h.
+
+Compile:
+```
+$ ./build_E.exe
+$ mv jikken jikken_get_conf
+```
+Then, a executable file jikken_get_conf is created.
+
+Execution:  
+Run the following command in the directory including the data file of a goal figure. 
+```
+$ ./jikken_get_conf <string1> <string2> <integer1> <integer2>
+```
+  
+&nbsp;　\<string1\> : file name of a goal figure (polygonal type)  
+&nbsp;　\<string2\> : file name to which results are written  
+&nbsp;　\<integer1\> : set 0 or 1 (a parameter not used)
+&nbsp;　\<integer2\> : the number of top configurations stored  
+
+(Example)
+```
+$ ./jikken_get_conf pegasus_60.dat ABC 0 50000
+```
+Then, the specified number of promising configurations are saved in a file (ABC_pegasus_60.dat.conf in this example).
+
+Step 2: Perform optimization for the specified configurations
+
+Before compiling the program, rewrite a part of the program directly. 
+- Set CONF in line 4 of env_I.h.
+- Set I or IR in line 4 of search_I_EST.h, depending on whether the E_I or E_IR distance is used.  
+
+Compile:
+```
+$ ./build_I.exe
+$ mv jikken jikken_I_conf
+```
+Then, a executable file jikken_I_conf is created.
+
+Execution:  
+Run the following command in the directory including the necessary data files. 
+```
+$ ./jikken_I_conf <string1> <string2> <integer1> <integer2> <double1> <string3>
+```
+  
+&nbsp;　\<string1\> : file name of a goal figure (mesh type)  
+&nbsp;　\<string2\> : file name to which results are written  
+&nbsp;　\<integer1\> : results are displayed?  0:no, 1:yes  
+&nbsp;　\<integer2\> : the number of top solutions stored  
+&nbsp;　\<double1\> : the value of alpha (see [2])
+&nbsp;　\<string3\> : file name of a promising configuration data
+
+(Example)
+```
+$ ./jikken_I_conf pegasus_60_27.dat ABC 1 20 0.5 ABC_pegasus_60.dat.conf
+```
+   
+Result:  
+Same as EST with the Euclidean distance.
+
 
