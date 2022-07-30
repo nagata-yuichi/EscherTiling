@@ -66,7 +66,7 @@ Each line represent the following values:
 &nbsp; \- eval : the distance value  
 &nbsp; \- IH   : Isohedral type  
 &nbsp; \- (...) : the numbers of points assigned to the tiling edges of the template  
-&nbsp; \- bright-most number : the value of j (see [1] or [2])  
+&nbsp; \- right-most number : the value of $j$ (see [1] or [2])  
 
 If \<integer1\> = 1, the top solutions (tile figures) are displayed. Press the return key to display the next solution. 
 
