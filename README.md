@@ -74,8 +74,6 @@ If \<integer1\> = 1, the top solutions (tile figures) are displayed. Press the r
 The top solutions stored in a file can also be displayed (see "Display Result"). 
 
 
-
-
 ## Display Results
 
 The solutions saved in a file (e.g. ABC_pegasus_60.dat.tile) can be displayed using the program for displaying results. 
@@ -98,4 +96,37 @@ $ ./display.exe <string1>
 Press the return key to display the next solution. 
 
 
+## EST with the E_I or E_IR distance 
+Running this program takes a lot of computation time.
+
+Before compiling the program, rewrite parts of the program directly. 
+- Set EST in line 4 of env_I.h.
+- Set I or IR in line 4 of search_I_EST.h, depending on whether the E_I or E_IR distance is used.
+
+Compile:
+```
+$ ./build_I.exe
+$ mv jikken jikken_I
+```
+Then, a executable file jikken_I is created.
+
+Execution:  
+Run the following command in the directory including the data file of a goal figure. 
+```
+$ ./jikken_I <string1> <string2> <integer1> <integer2> <double1>
+```
+  
+&nbsp;　\<string1\> : file name of a goal figure (mesh type)  
+&nbsp;　\<string2\> : file name to which results are written  
+&nbsp;　\<integer1\> : results are displayed?  0:no, 1:yes  
+&nbsp;　\<integer2\> : the number of top solutions stored  
+&nbsp;　\<double1\> : the value of alpha (see [2])
+
+(Example)
+```
+$ ./jikken_I pegasus_60_27.dat ABC 1 20 0.5
+```
+   
+Result:  
+Same as EST with the Euclidean distance.
 
