@@ -10,6 +10,8 @@ The following algorithms are implemented.
 - EST with the E_I or E_IR distance 
 - Heuristic search with the E_I or E_IR distance 
 
+![test](Images/abstract_image.png)
+
 # Environment
 The author ran the programs on Ubuntu 16.04 and 20.04, where the following preparations may be required to compile the source code. 
 - Make the Eigen library (https://eigen.tuxfamily.org) available on your PC. 
