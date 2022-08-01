@@ -55,7 +55,7 @@ $ ./jikken_E pegasus_60.dat ABC 1 20
 ```
    
 Result:  
-The specified number of top solutions are saved in a file (ABC_pegasus_60.dat.tile in this example) and are displayed in the terminal, as shown in the example below 
+The specified number of top solutions are saved in a file (ABC.tile in this example) and are displayed in the terminal, as shown in the example below 
 ```
 order =  0 eval=18994.244366: IH= 6 (18 4 18 7 4 3 ) 22  
 order =  1 eval=21028.815657: IH= 6 (5 14 5 12 14 4 ) 48  
@@ -77,7 +77,7 @@ The top solutions stored in a file can also be displayed (see "Display Result").
 
 ## Display Results
 
-The solutions saved in a file (e.g. ABC_pegasus_60.dat.tile) can be displayed using this program. 
+The solutions saved in a file (e.g. ABC.tile) can be displayed using this program. 
 
 Compile:  
 ```
@@ -153,7 +153,7 @@ $ ./jikken_get_conf <string1> <string2> <integer1> <integer2>
 ```
 $ ./jikken_get_conf pegasus_60.dat ABC 0 50000
 ```
-Then, the specified number of promising configurations are saved in a file (ABC_pegasus_60.dat.conf in this example).
+Then, the specified number of promising configurations are saved in a file (ABC.conf in this example).
 
 **Step 2: Perform optimization for the specified configurations**
 
@@ -182,7 +182,7 @@ $ ./jikken_I_conf <string1> <string2> <integer1> <integer2> <double1> <string3>
 
 (Example)
 ```
-$ ./jikken_I_conf pegasus_60_27.dat ABC 1 20 0.5 ABC_pegasus_60.dat.conf
+$ ./jikken_I_conf pegasus_60_27.dat ABC 1 20 0.5 ABC.conf
 ```
    
 Result:  
