@@ -29,8 +29,8 @@ It is recommended to run EST with the Euclidean distance first because this is t
 
 ## EST with the Euclidean or AD distance 
 Before compiling the program, rewrite parts of the program directly. 
-- Set EST in line 4 of env_E.h.
-- Set E or AD in line 4 of search_E_EST.h, depending on whether the Euclidean or AD distance is used.  
+- Set EST in line 10 of env_E.h.
+- Set E or AD in line 10 of search_E_EST.h, depending on whether the Euclidean or AD distance is used.  
 
 Compile:
 ```
@@ -96,8 +96,8 @@ Press the return key to display the next solution.
 
 ## EST with the E_I or E_IR distance 
 Before compiling the program, rewrite parts of the program directly. 
-- Set EST in line 4 of env_I.h.
-- Set I or IR in line 4 of search_I_EST.h, depending on whether the E_I or E_IR distance is used.
+- Set EST in line 10 of env_I.h.
+- Set I or IR in line 10 of search_I_EST.h, depending on whether the E_I or E_IR distance is used.
 
 Compile:
 ```
@@ -130,7 +130,7 @@ Same as EST with the Euclidean distance.
 **Step 1: Obtaining promising configurations**
 
 Before compiling the program, rewrite a part of the program directly. 
-- Set CONF in line 4 of env_E.h.
+- Set CONF in line 10 of env_E.h.
 
 Compile:
 ```
