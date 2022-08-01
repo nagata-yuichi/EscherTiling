@@ -1,0 +1,7 @@
+g++ -o display.exe -O3 main_display.cpp env_display.cpp display.cpp Xwindow4.cc -lm -lX11 -std=c++11 
+
+
+
+
+
+

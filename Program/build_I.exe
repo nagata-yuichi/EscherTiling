@@ -1,0 +1,1 @@
+g++ -o jikken -O3 main_I.cpp env_I.cpp search_I_EST.cpp search_I_conf.cpp operator_base.cpp operator_I.cpp operator_IR.cpp display.cpp Xwindow4.cc -lm -lX11 -std=c++11
