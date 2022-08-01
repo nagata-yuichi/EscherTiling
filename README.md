@@ -7,7 +7,7 @@ This code is a C++ implementation of the algorithms developed in the following p
 
 The following algorithms are implemented.
 - EST with the Euclidean or AD distance 
-- EST with the E_I or E_IR distance 
+- EST with the $E_I$ or $E_{IR}$ distance 
 - Heuristic search with the E_I or E_IR distance 
 
 <img src="Images/abstract_image.png" width="70%">
