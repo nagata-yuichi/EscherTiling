@@ -1,0 +1,27 @@
+Goal figure files are divided into two types. 
+(1) Polygonal type: e.g. pegasus_60.dat 
+(2) Mesh type: e.g. pegasus_60_27.dat 
+
+
+Data format:
+n : the number of points on the boundary
+n' : the number of inner points 
+
+(1) Polygonal type:
+n 
+x_1 y_1
+x_2 y_2
+...
+x_n y_n 
+
+(2) Mesh type:
+n n' 
+x_1 y_1
+x_2 y_2
+...
+x_n y_n 
+x_{n+1} y_{n+1} 
+x_{n+2} y_{n+2} 
+...
+x_{n+n'} y_{n+n'} 
+Adjacency matrix 
